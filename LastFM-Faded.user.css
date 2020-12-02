@@ -1,7 +1,8 @@
 /* ==UserStyle==
-@name         Last.fm 
+@name         Last.fm Faded
 @namespace    https://github.com/SeansThings/LastFM-Faded
 @version      0.0.1
+@license      MIT
 ==/UserStyle== */
 
 @-moz-document domain("last.fm") {
@@ -102,7 +103,6 @@
     .more-link a::before {
         /*background-image: url("/static/images/icons/arrow_small_right_005399_12.cf9465753ea1.png");*/
         /* Blue Chevron */
-        ;
     }
 
     /* Chartlist */
@@ -200,17 +200,15 @@
     .dropdown-menu-clickable::before {
         /*background-image: url("/static/images/dropdown_arrow.47e2426b4e14.png");*/
         /* Arrow for combo box */
-        ;
     }
 
     .section-settings-toggle::before {
-        /*background-image: url("/static/images/icons/settings_222_16.1fa6ac1ed6a9.png");*/
-        ;
+        /* It works, but it's the same colour as the background ¬_¬ */
+        background-image: url(data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGrmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDIgNzkuMTY0NDYwLCAyMDIwLzA1LzEyLTE2OjA0OjE3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcDpDcmVhdGVEYXRlPSIyMDIwLTEyLTAyVDE3OjU5OjM5WiIgeG1wOk1vZGlmeURhdGU9IjIwMjAtMTItMDJUMTg6MDA6NDBaIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIwLTEyLTAyVDE4OjAwOjQwWiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxZDU0Y2Y4Yy1hYTdkLTBmNDYtYTExNC1iODE5MTUyMmY2ZDQiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpkNWNkNjg3YS0xNzM2LTcxNDYtYTdkYi1kOWNjYTRlZWMwYmQiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpENTdGOEM3QTA2MjkxMUU1OUExNEUwQ0YwNjUxMzcyMyIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjEiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJEb3QgR2FpbiAyMCUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpENTdGOEM3NzA2MjkxMUU1OUExNEUwQ0YwNjUxMzcyMyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpENTdGOEM3ODA2MjkxMUU1OUExNEUwQ0YwNjUxMzcyMyIvPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDoyNzkzNTdiMy1mMTY5LTMyNGEtOTEyOS0wODEzNWFlN2Q1MzIiIHN0RXZ0OndoZW49IjIwMjAtMTItMDJUMTg6MDA6NDBaIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjEuMiAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjFkNTRjZjhjLWFhN2QtMGY0Ni1hMTE0LWI4MTkxNTIyZjZkNCIgc3RFdnQ6d2hlbj0iMjAyMC0xMi0wMlQxODowMDo0MFoiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMS4yIChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6hSQafAAABBklEQVQokV3Qvy5DARQG8N9tb6QqWOoNaNqIaFiIjW4kulZE6i2IGEhHi9EqZvEGLBhEF4k/KU9ARSIpEjcMt20uZznnfOd8588XVPyxth8DSSAFMjZlQX/HZ23IQAgOrBl3ahWcOrKgqqBGUIEJl38H492cm+6Ke4/+25O7+IainJpJRHaMGrUrQsm6nGJQuVPwLUTddoddt4VvoduUV5+dU/d74+Mo9OEtNCetrQ/thBrwZVCUQqQJVnoNVdAUxV+UDYE9i2DJHhhWJqhMuU4894yRRD4dajjWcOZELlF8sWxeSSNWEvIeEsyxrnSpHjSDc3l5F5jtwmGvoeXKoSYOpbW68C9N8j0yxNUkyAAAAABJRU5ErkJggg==)
     }
 
     .share-button-profile::before {
         /* background-image: url("/static/images/icons/share_222_16.9aba752fb1e9.png");*/
-        ;
     }
 
     /* Reports */
@@ -615,8 +613,7 @@
 
     /* --- Dashboard --- */
     .venn_mask {
-        /*background-image: url("/static/images/kerve/venn_mask_dark.e0e4fc7f208d.png");*/
-        ;
+        /* background-image: url("/static/images/kerve/venn_mask_dark.e0e4fc7f208d.png"); */
     }
 
     .widget_label {
